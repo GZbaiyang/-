@@ -21,7 +21,7 @@ st.subheader('1. 不同地区访问用户量分布')
 st.caption('通过柱状图展示各地区的独立会话用户总量')
 
 fig1, ax1 = plt.subplots(figsize=(10, 6))
-sns.barplot(x='地区信息', y='独立会话标识总数', data=df_area, ax=ax1, fontproperties=my_font)
+sns.barplot(x='地区信息', y='独立会话标识总数')
 ax1.set_title('不同地区访问用户量柱状图', fontsize=12, fontproperties=my_font)
 ax1.set_xlabel('地区', fontsize=10, fontproperties=my_font)
 ax1.set_ylabel('访问用户量', fontsize=10, fontproperties=my_font)
@@ -60,6 +60,7 @@ ax3.set_xlabel('地区', fontsize=10, fontproperties=my_font)
 ax3.set_ylabel('访问用户量', fontsize=10, fontproperties=my_font)
 ax3.tick_params(axis='x', rotation=90)
 st.pyplot(fig3)
+
 
 
 
