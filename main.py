@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from matplotlib.font_manager import FontProperties
 
-font_path = "./fonts/SimHei.ttf"
+font_path = "./fonts/simhei.ttf"
 my_font = FontProperties(fname=font_path)
 
 # 设置图片清晰度
@@ -54,5 +54,6 @@ ax3.set_xlabel('地区')
 ax3.set_ylabel('访问用户量')
 ax3.tick_params(axis='x', rotation=90)
 st.pyplot(fig3)
+
 
 
