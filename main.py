@@ -3,11 +3,14 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
+font_path = "./fonts/SimHei.ttf"
+my_font = FontProperties(fname=font_path)
+
 # 设置图片清晰度
 plt.rcParams['figure.dpi'] = 300
 
 # 正常显示中文
-plt.rcParams['font.sans-serif'] = ['SimHei']
+plt.rcParams['font.sans-serif'] = [my_font.get_name()]
 
 # 正常显示负号
 plt.rcParams['axes.unicode_minus'] = False
@@ -50,3 +53,4 @@ ax3.set_xlabel('地区')
 ax3.set_ylabel('访问用户量')
 ax3.tick_params(axis='x', rotation=90)
 st.pyplot(fig3)
+
