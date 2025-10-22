@@ -34,9 +34,9 @@ st.caption('通过柱状图展示各地区的独立会话用户总量')  # 辅�
 
 fig1, ax1 = plt.subplots(figsize=(10, 6))
 sns.barplot(x='地区信息', y='独立会话标识总数', data=df_area, ax=ax1)
-ax1.set_title('不同地区访问用户量柱状图', fontsize=12)
-ax1.set_xlabel('地区', fontsize=10)
-ax1.set_ylabel('访问用户量', fontsize=10)
+ax1.set_title('不同地区访问用户量柱状图', fontsize=12, fontproperties=my_font)
+ax1.set_xlabel('地区', fontsize=10, fontproperties=my_font)
+ax1.set_ylabel('访问用户量', fontsize=10, fontproperties=my_font)
 ax1.tick_params(axis='x', rotation=90)  # 地区名称过长时旋转
 st.pyplot(fig1)
 st.divider()
@@ -56,7 +56,7 @@ df_channel['独立会话标识总数'].plot(
     startangle=90,
     textprops={'fontproperties': my_font}  # 确保饼图标签中文正常显示
 )
-ax2.set_title('不同来源渠道访问用户量饼图', fontsize=12)
+ax2.set_title('不同来源渠道访问用户量饼图', fontsize=12, fontproperties=my_font)
 ax2.axis('equal')  # 保证饼图为正圆形
 st.pyplot(fig2)
 st.divider()
@@ -69,11 +69,12 @@ st.caption('通过箱线图展示各地区用户量的分布范围、中位数�
 
 fig3, ax3 = plt.subplots(figsize=(10, 6))
 sns.boxplot(x='地区信息', y='独立会话标识总数', data=df_area, ax=ax3)
-ax3.set_title('不同地区访问用户量分布箱线图', fontsize=12)
-ax3.set_xlabel('地区', fontsize=10)
-ax3.set_ylabel('访问用户量', fontsize=10)
+ax3.set_title('不同地区访问用户量分布箱线图', fontsize=12, fontproperties=my_font)
+ax3.set_xlabel('地区', fontsize=10, fontproperties=my_font)
+ax3.set_ylabel('访问用户量', fontsize=10, fontproperties=my_font)
 ax3.tick_params(axis='x', rotation=90)
 st.pyplot(fig3)
+
 
 
 
