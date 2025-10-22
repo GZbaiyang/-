@@ -25,7 +25,7 @@ sns.barplot(x='地区信息', y='独立会话标识总数',data=df_area,ax=ax1)
 ax1.set_title('不同地区访问用户量柱状图', fontsize=12, fontproperties=my_font)
 ax1.set_xlabel('地区', fontsize=10, fontproperties=my_font)
 ax1.set_ylabel('访问用户量', fontsize=10, fontproperties=my_font)
-ax1.tick_params(axis='x', rotation=90)
+ax1.tick_params(axis='x',fontproperties=my_font,rotation=90)
 st.pyplot(fig1)
 st.divider()
 
@@ -57,8 +57,9 @@ sns.boxplot(x='地区信息', y='独立会话标识总数', data=df_area, ax=ax3
 ax3.set_title('不同地区访问用户量分布箱线图', fontsize=12, fontproperties=my_font)
 ax3.set_xlabel('地区', fontsize=10, fontproperties=my_font)
 ax3.set_ylabel('访问用户量', fontsize=10, fontproperties=my_font)
-ax3.tick_params(axis='x', rotation=90)
+ax3.tick_params(axis='x', fontproperties=my_font, rotation=90)
 st.pyplot(fig3)
+
 
 
 
