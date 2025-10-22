@@ -2,5 +2,6 @@ pandas~=2.0.3
 matplotlib~=3.7.5
 seaborn~=0.13.2
 streamlit~=1.40.1
-openpyxl~= 3.1.5
+openpyxl~=3.1.5
 plotly~=6.3.1
+
